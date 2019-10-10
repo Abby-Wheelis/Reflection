@@ -17,10 +17,7 @@ h1
 {
    width: 800px;
     padding: 10px;
-    background-image: url("flower.jpg");
     color:#516F00;
-   opacity: 0.2;
-    
 }
 #Learned h3
 {
@@ -31,6 +28,4 @@ h1
 { 
     width: 800px;
     padding: 10px;
-   background-image: url("foggy.jpeg");
-   opacity: 0.2;
 }
