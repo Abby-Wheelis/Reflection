@@ -13,10 +13,16 @@ h1
    font-size: 36px; 
 }
 
-#Learned
+div
 {
    width: 800px;
     padding: 10px;
+   border: solid;
+   border-color: black;
+}
+
+#Learned
+{
     color:#516F00;
    background-color: #f0f8ff;
 }
@@ -27,6 +33,11 @@ h1
 
 #Questions
 { 
-    width: 800px;
-    padding: 10px;
+    color: #20211B;
+   background-color: #CCCECD;
+}
+
+#Questions h3
+{
+   color: #3A3E27;
 }
