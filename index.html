@@ -1,0 +1,28 @@
+<html>
+<head>
+   <link href="reflection.css" type="text/css" rel="stylesheet"> 
+</head>
+    <h1>Reflections Thus Far...</h1>
+<body>
+    <div id="Learned">
+    <h3>What I've Learned</h3>
+    <p>The hardest thing that I have learned so far is the basics of how to edit html using javascript. Because I have now learned the d3 algorithm, I am able to make additions to the html by using the tools of the d3 library. In order to follow through with a d3 algorithm, there are 6 basic steps. </p>
+    <ol>
+        <li>Select where the new html elements will appear on the page. This is done using the d3 command .select(“CSS selector”). It is possible that you may need to create the space where you want to put the new html elements, such as creating a div to put paragraphs in. This is done using the d3 command .append(“CSS selector”). </li>
+        <li>Select all of the elements that don’t exist yet, because that is what you are creating. This is done using the d3 command .selectAll(“CSS selector”). You have to be careful here that there are not any of said elements already in existence within the CSS selector that you used in .select. This is where it may be useful to create a new div, either in the previous step or directly in the html. If there was already say, a paragraph, I’ve found that it will “eat” the first paragraph you expected to appear.</li>
+        <li>Bind the data. This is done using the d3 command .data(name of dataset). It is important that the name of your dataset matches that which you used in your promise and that which you set as a parameter for this function (see the example code below). The data set must be of the array type or the d3 algorithm will not work. However, the array can be made up of any type.</li>
+        <li>Get all of the missing visual elements. This step will always be the d3 command .enter(). It essentially allows you to append the elements that you are creating using the data set.</li>
+        <li>Create and append the elements. This step is done using the d3 command .append(CSS selector. It is important that your CSS selector here matches that which you used in .selectAll or you won’t achieve the desired effect.</li>
+        <li>The final step is to decorate. This is achieved using the d3 commands .text(“string”), .attr(“attribute”, value), and/or .on(“action”, value). These commands often contain functions in the form function(d) {return d.attribute}, for example. It is helpful to remember here that the d parameter represents one of the values in the array, for example, if your array is filled with objects, d represents one of those objects. It is also important to note that you can have many of these decoration commands in your d3 algorithm function.</li>
+    </ol>
+    </div>
+    
+    
+    <div id="Questions">
+    <h3>What I'm Still Learning</h3>
+    <p>One of the things that I do not understand very well is the html elements to enable the binding of the data and the eventual creation of those elements. However, I am still slightly confused on how exactly this is done and why it works that way. It may be possible that it is simply the way that the d3 library was designed to work, but it still does not make perfect sense to me. </p>
+    <p>In addition, I am also wondering if we will be writing javascript without the use of the d3 library going forward and if there are others who do write javascript without the use of d3, or if there are other algorithms out there. </p>
+    <p>Finally, I am curious as to how we are going to make data visualizations using d3 and javascript because that seems like where we might eventually be heading, but I am somewhat certain that it is something that I currently find it feasible for me to accomplish this semester.</p>
+    </div>
+</body>
+</html>
