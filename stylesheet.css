@@ -1,6 +1,8 @@
 body
 {
    font-size: 18px; 
+   @import url('https://fonts.googleapis.com/css?family=Concert+One|Work+Sans&display=swap');
+   font-family: 'Work Sans', sans-serif;
    background-image: url("geometric.jpg")
 }
 
@@ -8,6 +10,7 @@ h3
 {
     font-size: 24px;
    color: #EC0A6E;
+   font-family: 'Concert One', cursive;
 }
 
 h1
@@ -21,6 +24,7 @@ h1
    margin: 10px;
    border-radius: 10px;
    background-color: F7C1BB;
+   font-family: 'Concert One', cursive;
    
 }
 
