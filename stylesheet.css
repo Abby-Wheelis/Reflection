@@ -18,10 +18,11 @@ h1
 div
 {
    width: 800px;
-    padding: 10px;
+    padding: 12px;
    border: solid;
    border-color: #EC0A6E;
-   margin: 5px;
+   margin: 10px;
+   border-radius: 10px;
 }
 
 #Learned
