@@ -1,7 +1,6 @@
 body
 {
    font-size: 18px; 
-   @import url('https://fonts.googleapis.com/css?family=Concert+One|Work+Sans&display=swap');
    font-family: 'Work Sans', sans-serif;
    background-image: url("geometric.jpg")
 }
