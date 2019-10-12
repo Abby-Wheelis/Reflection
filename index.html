@@ -16,6 +16,21 @@
         <li>Create and append the elements. This step is done using the d3 command .append(CSS selector. It is important that your CSS selector here matches that which you used in .selectAll or you won’t achieve the desired effect.</li>
         <li>The final step is to decorate. This is achieved using the d3 commands .text(“string”), .attr(“attribute”, value), and/or .on(“action”, value). These commands often contain functions in the form function(d) {return d.attribute}, for example. It is helpful to remember here that the d parameter represents one of the values in the array, for example, if your array is filled with objects, d represents one of those objects. It is also important to note that you can have many of these decoration commands in your d3 algorithm function.</li>
     </ol>
+       <pre>
+       var makeExample= function(data)
+       {
+         d3.select("body")
+         .selectAll("div")
+         .data(data)
+         .enter()
+         .append("div")
+         .text(function (d)
+         { return d.attribute});
+       }
+       </pre>
+       <p>
+          This example code would append to the end of the body a div for every element in the data array containing the value of a specified attribute for each element. 
+       </p>
     </div>
     
     
